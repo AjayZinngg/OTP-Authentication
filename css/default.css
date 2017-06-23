@@ -1,0 +1,136 @@
+*{
+	margin:			0px;
+	border:			0px solid gray;
+	padding:		0px;
+	box-sizing:		border-box;
+}
+
+a{
+	transition:		color 0.125s;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active{
+    text-decoration:	none;
+}
+
+html,
+body{
+	height:		100%;
+	width:		100%;
+}
+
+.horz{
+	display:	inline-block;
+}
+
+.horz-f{
+	display:		flex;
+	flex-direction:	row;
+	flex-shrink:	0;
+}
+
+.horz-fi{
+	display:		flex;
+	flex-direction:	row-reverse;
+	flex-shrink:	0;
+}
+
+.vert-f{
+	display:		flex;
+	flex-direction:	column;
+	flex-shrink:	0;
+}
+
+.vert-fi{
+	display:		flex;
+	flex-direction:	column-reverse;
+	flex-shrink:	0;
+}
+
+.start-f{
+	align-items:	flex-start;
+}
+
+.center-f{
+	align-items:	center;
+}
+
+.end-f{
+	align-items:	flex-end;
+}
+
+.baseline-f{
+	align-items:	baseline;
+}
+
+.stretch-f{
+	align-items:	stretch;
+}
+
+.wrap-f{
+	flex-wrap:	wrap;
+}
+
+.wrap-fi{
+	flex-wrap:	wrap-reverse;
+}
+
+.just-start-f{
+	justify-content:	flex-start;
+}
+
+.just-center-f{
+	justify-content:	center;
+}
+
+.just-end-f{
+	justify-content:	flex-end;
+}
+
+.just-space-btn-f{
+	justify-content:	space-between;
+}
+
+.just-space-arnd-f{
+	justify-content:	space-around;
+}
+
+.item-start-f{
+	align-self:	flex-start;
+}
+
+.item-center-f{
+	align-self:	center;
+}
+
+.item-end-f{
+	align-self:	flex-end;
+}
+
+.item-baseline-f{
+	align-self:	baseline;
+}
+
+.item-stretch-f{
+	align-self:	stretch;
+}
+
+.item-extend-f{
+	flex-grow:	1;
+}
+
+.fit-x{
+	width:	100%;
+}
+
+.fit-y{
+	height:	100%;
+}
+
+.inactive{
+	pointer-events:	none;
+	cursor:			default;
+}

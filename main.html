@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simple Contacts App</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Varela+Round">
+	<link rel="stylesheet" type="text/css" href="css/default.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body class="vert-f">
+
+<div id="tabs" class="horz-f baseline-f">
+	<div class="tab" id="current">Contacts</div>
+	<div class="tab">Messages</div>
+</div>
+<div id="contacts" class="horz-f wrap-f"></div>
+<div id="messages" class="vert-f"></div>
+
+<div id="screen" class="vert-f center-f just-center-f">
+	<div id="contact-details" class="vert-f">
+		<img id="cross" src="images/cross.png" class="item-end-f">
+		First Name:<span id="first-name"></span><br>
+		Last Name:<span id="last-name"></span><br>
+		Phone No.:<span id="phone-number"></span><br>
+		OTP:<input id="otp" type="number"><br>
+		<div id="send" class="item-end-f">Send ></div>
+		<div id="otp-status" class="item-end-f"></div>
+	</div>
+</div>
+
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
