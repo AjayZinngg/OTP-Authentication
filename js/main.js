@@ -68,7 +68,7 @@ $('#cross').click(function(){
 //Send OTP
 $('#send').click(function(){
 	if(!sent){
-		var url='https://2factor.in/API/V1/'+key+'/SMS/'+$('#phone-number').text()+'/'+$('#otp').val();
+		var url='https://2factor.in/API/V1/'+key+'/SMS/'+$('#phone-number').text()+'/'+"Offer wala kaam go gaya?";
 		//$('#contact-details').append('<object id="site" data="'+url+'"></object>');
 		$.getJSON(url,function(data){
 			sentOtp(data);
