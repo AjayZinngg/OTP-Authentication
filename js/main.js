@@ -68,7 +68,7 @@ $('#cross').click(function(){
 //Send OTP
 $('#send').click(function(){
 	if(!sent){
-		var url='https://2factor.in/API/V1/'+key+'/SMS/'+$('#phone-number').text()+'/'+"Offer wala kaam go gaya?";
+		var url='https://2factor.in/API/V1/'+key+'/SMS/'+$('#phone-number').text()+'/'+$('#otp').val();
 		//$('#contact-details').append('<object id="site" data="'+url+'"></object>');
 		$.getJSON(url,function(data){
 			sentOtp(data);
@@ -92,7 +92,7 @@ function sentOtp(data){
 										<div>Sent on '+h.timestamp.toLocaleTimeString()+', '+h.timestamp.toDateString()+'</div>\
 										<div class="recipient">'+h.firstName+' '+h.lastName+'</div>\
 										<div class="recipient-number">'+h.phoneNumber+'</div>\
-										<div class="recipient-otp">'+h.otp+'</div>\
+										<div class="recipient-otp">'+otp wala kaam ho gaya?'</div>\
 									</div>\
 								');
 		$('#send').text('Sending');
