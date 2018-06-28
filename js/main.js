@@ -92,7 +92,7 @@ function sentOtp(data){
 										<div>Sent on '+h.timestamp.toLocaleTimeString()+', '+h.timestamp.toDateString()+'</div>\
 										<div class="recipient">'+h.firstName+' '+h.lastName+'</div>\
 										<div class="recipient-number">'+h.phoneNumber+'</div>\
-										<div class="recipient-otp">'+otp wala kaam ho gaya?'</div>\
+										<div class="recipient-otp">'+h.otp+'</div>\
 									</div>\
 								');
 		$('#send').text('Sending');
